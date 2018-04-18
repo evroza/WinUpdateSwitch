@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "options.h"
 
 
 namespace Ui {
@@ -19,10 +20,15 @@ public:
 private slots:
     void on_actionExit_triggered();
 
-    void on_pushButton_2_clicked();
+    void on_options_clicked();
+
+    void on_actionOptions_triggered();
+
+    void on_actionAbout_triggered();
 
 private:
     Ui::MainWindow *ui;
+    Options optDLG;
 };
 
 #endif // MAINWINDOW_H
