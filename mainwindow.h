@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 
+
 namespace Ui {
 class MainWindow;
 }
@@ -17,6 +18,8 @@ public:
 
 private slots:
     void on_actionExit_triggered();
+
+    void on_pushButton_2_clicked();
 
 private:
     Ui::MainWindow *ui;

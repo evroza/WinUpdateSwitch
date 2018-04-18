@@ -22,5 +22,6 @@ void MainWindow::on_actionExit_triggered()
 void MainWindow::on_pushButton_2_clicked()
 {
     Options optDLG;
-    optDLG.show();
+    optDLG.setModal(true);
+    optDLG.exec();
 }
